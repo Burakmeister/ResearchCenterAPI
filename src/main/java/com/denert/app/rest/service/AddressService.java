@@ -1,6 +1,7 @@
 package com.denert.app.rest.service;
 
 import com.denert.app.rest.adnotations.PublicsLogger;
+import com.denert.app.rest.adnotations.ValidateAddress;
 import com.denert.app.rest.dto.AddressRequest;
 import com.denert.app.rest.dto.AddressResponse;
 import com.denert.app.rest.exception.AddressNotFoundException;
@@ -20,6 +21,7 @@ public class AddressService {
 
     private final AddressRepo addressRepo;
 
+    @ValidateAddress
     public AddressResponse createAddress(AddressRequest addressRequest){
         final Address address = Address.builder()
                 .city(addressRequest.getCity())
