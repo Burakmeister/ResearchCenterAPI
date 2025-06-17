@@ -1,0 +1,7 @@
+package com.denert.app.rest.adnotations;
+
+import java.lang.annotation.*;
+
+@Target({ElementType.TYPE, ElementType.METHOD})
+@Retention(RetentionPolicy.RUNTIME)
+public @interface PublicsLogger {}

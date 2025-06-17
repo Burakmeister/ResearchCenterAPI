@@ -17,7 +17,7 @@ import java.util.Set;
 public class AddressRequest {
 
 
-    private Set<User> users = new HashSet<>();
+    private Set<User> users;
 
     private String city;
 

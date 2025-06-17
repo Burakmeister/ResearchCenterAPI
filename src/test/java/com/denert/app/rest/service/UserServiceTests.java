@@ -3,7 +3,7 @@ package com.denert.app.rest.service;
 import com.denert.app.rest.dto.UserResponse;
 import com.denert.app.rest.models.User;
 import com.denert.app.rest.repo.UserRepo;
-import org.junit.Test;
+import org.testng.annotations.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;

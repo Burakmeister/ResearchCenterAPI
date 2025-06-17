@@ -23,7 +23,7 @@ public class Address {
 
     @OneToMany(mappedBy = "address")
     @JsonManagedReference
-    private Set<User> users = new HashSet<>();
+    private Set<User> users;
 
     @Column(length = 45)
     private String city;

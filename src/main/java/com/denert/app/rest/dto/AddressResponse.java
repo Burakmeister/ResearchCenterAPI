@@ -16,7 +16,7 @@ public class AddressResponse {
 
     private Long addressId;
 
-    private Set<User> users = new HashSet<>();
+    private Set<User> users;
 
     private String city;
 

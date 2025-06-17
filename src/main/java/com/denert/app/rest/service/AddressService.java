@@ -1,5 +1,6 @@
 package com.denert.app.rest.service;
 
+import com.denert.app.rest.adnotations.PublicsLogger;
 import com.denert.app.rest.dto.AddressRequest;
 import com.denert.app.rest.dto.AddressResponse;
 import com.denert.app.rest.exception.AddressNotFoundException;
@@ -11,6 +12,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@PublicsLogger
 @Service
 @Slf4j
 @RequiredArgsConstructor
